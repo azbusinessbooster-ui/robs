@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rob's Painting AZ</title>
     <style>
+        html {
+            height: 100%;
+        }
         body {
+            min-height: 100%;
             background-image: url('https://media.istockphoto.com/id/2023616635/vector/rainbow-paint-powder-holi-splash-abstract-vector-illustration.jpg?s=612x612&w=0&k=20&c=eZRnV3Rya0UCs8bSeVdUs-gIGleUglhJ02jejZ6rOGk=');
-            background-size: contain;
-            background-repeat: repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Makes the paint theme "follow" by staying fixed in the viewport on scroll */
             font-family: Arial, sans-serif;
             color: #333;
             margin: 0;
