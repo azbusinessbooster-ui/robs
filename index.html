@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob's Painting AZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/066/174/145/small/bright-abstract-paint-splash-background-with-scattered-ink-blots-and-halftone-dots-on-a-clean-white-base-ideal-for-posters-prints-banners-and-digital-projects-vector.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            color: #000;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+            position: relative;
+        }
+        .flag {
+            width: 50px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        h1 {
+            color: #000;
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        .tagline {
+            font-style: italic;
+            color: #333;
+        }
+        .veteran {
+            font-weight: bold;
+            color: red;
+            margin-top: 10px;
+        }
+        .contact {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
+        nav button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        nav button:hover {
+            background-color: #0056b3;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #000;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9em;
+            color: #333;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" alt="US Flag" class="flag">
+        <img src="https://thumbs.dreamstime.com/b/cartoon-painter-paint-roller-cheerful-illustration-holding-character-dressed-blue-jumpsuit-cap-orange-400413363.jpg" alt="Rob's Painting AZ Logo" class="logo">
+        <h1>Rob's Painting AZ</h1>
+        <p class="tagline">Brushing beauty into every space</p>
+        <p class="veteran">Veteran Owned</p>
+        <p class="contact">Phone: 602.687.2062 | Instagram: <a href="https://www.instagram.com/robs_paintingaz/">@robs_paintingaz</a></p>
+        <p>FREE ESTIMATES</p>
+    </header>
+    <nav>
+        <button onclick="scrollToSection('services')">Services</button>
+        <button onclick="scrollToSection('about')">About</button>
+        <button onclick="scrollToSection('why')">Why Rob's Painting AZ</button>
+    </nav>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>At Rob's Painting AZ, we offer a full range of painting and prep services to transform your spaces with vibrant colors and professional finishes. Whether it's a cozy home or a bustling commercial spot, we've got you covered!</p>
+            <h3>Painting Services</h3>
+            <ul>
+                <li>Residential & Commercial Painting: High-quality paints for homes and businesses alike.</li>
+                <li>Interior & Exterior Painting: From walls to exteriors, we handle it all with care.</li>
+                <li>Decorative Painting: Add unique touches like murals or accents to make your space pop.</li>
+                <li>Cabinet Refinishing: Refresh your cabinets with eco-friendly finishes for a like-new look.</li>
+                <li>Eco-Friendly Painting: Sustainable options that are kind to the planet and your health.</li>
+            </ul>
+            <h3>Prep Services</h3>
+            <ul>
+                <li>Drywall Repair: Smooth out imperfections for a flawless base.</li>
+                <li>Interior Demolition: Safe removal of old features to prepare for your new vision.</li>
+                <li>Pressure Washing: Clean surfaces thoroughly before painting for lasting results.</li>
+            </ul>
+            <h3>Additional Services</h3>
+            <ul>
+                <li>Labor-Only: Flexible options if you provide the materials—we bring the expertise!</li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Rob's Painting AZ is a veteran-owned business dedicated to bringing color and life to every project. Founded by Rob, a proud U.S. veteran with years of experience in the painting industry, we combine military precision with creative flair. Our team is passionate about delivering top-notch results, using eco-friendly materials and techniques to ensure your satisfaction. Based in Arizona, we're committed to serving our community with integrity and a smile—just like our cheerful painter mascot!</p>
+        </section>
+        <section id="why">
+            <h2>Why Choose Rob's Painting AZ?</h2>
+            <p>Choosing us means opting for quality, reliability, and a touch of fun in every brushstroke. Here's why we're the perfect fit for your painting needs:</p>
+            <ul>
+                <li><strong>Veteran-Owned Excellence:</strong> Benefit from the discipline and attention to detail honed in military service.</li>
+                <li><strong>Eco-Friendly Options:</strong> We prioritize sustainable practices to protect your home and the environment.</li>
+                <li><strong>Free Estimates:</strong> No-obligation quotes to help you plan your project with ease.</li>
+                <li><strong>Professional Team:</strong> Skilled painters who treat your space like their own, ensuring clean and efficient work.</li>
+                <li><strong>Affordable and Transparent:</strong> Competitive pricing with no hidden fees, plus flexible services like labor-only.</li>
+                <li><strong>Customer Satisfaction:</strong> We're not done until you're thrilled with the vibrant transformation!</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Rob's Painting AZ. All rights reserved.
+    </footer>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
