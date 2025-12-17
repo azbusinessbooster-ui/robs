@@ -1,4 +1,4 @@
-<!-- finished-jobs.html (new file) -->
+<!-- finished-jobs.html (updated with direct post embed via iframe for the video) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,8 +77,9 @@
             font-weight: 900; /* Thicker */
             text-shadow: 1px 1px 2px rgba(255,255,255,0.8); /* For readability */
         }
-        .instagram-media {
-            margin: 0 auto !important;
+        .instagram-embed {
+            margin: 0 auto;
+            overflow: hidden; /* To hide parts if needed */
         }
         .floating-phone {
             position: fixed;
@@ -113,9 +114,10 @@
     </header>
     <section class="finished-jobs">
         <h1>Finished Jobs</h1>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGd6dPHyK77/" data-instgrm-captioned data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
+        <div class="instagram-embed">
+            <iframe src="https://www.instagram.com/p/DGd6dPHyK77/embed" width="640" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
     </section>
     <a href="tel:6028872062" class="floating-phone">📞</a>
-    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
