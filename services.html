@@ -15,6 +15,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            position: relative; /* For positioning the flag */
         }
         header {
             background-color: rgba(255, 255, 255, 0.8);
@@ -27,6 +28,12 @@
             font-size: 24px;
             font-weight: bold;
             color: #ff4d4d;
+        }
+        .veteran-owned {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
         }
         nav ul {
             list-style: none;
@@ -49,7 +56,6 @@
             font-weight: bold;
         }
         .services {
-            background-color: white;
             padding: 50px 20px;
             margin: 20px auto;
             max-width: 800px;
@@ -59,11 +65,15 @@
             font-size: 36px;
             color: #ff4d4d;
             margin-bottom: 30px;
+            font-weight: 900; /* Thicker */
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8); /* For readability */
         }
         .services h2 {
             font-size: 24px;
             margin-top: 20px;
             margin-bottom: 10px;
+            font-weight: 900; /* Thicker */
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
         }
         .services ul {
             list-style-type: disc;
@@ -75,6 +85,8 @@
         .services li {
             font-size: 18px;
             margin-bottom: 10px;
+            font-weight: 700; /* Thicker */
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
         }
         .floating-phone {
             position: fixed;
@@ -87,11 +99,22 @@
             text-decoration: none;
             font-size: 20px;
         }
+        .american-flag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag" class="american-flag">
     <header>
-        <div class="logo">Rob's Painting AZ</div>
+        <div>
+            <div class="logo">Rob's Painting AZ</div>
+            <div class="veteran-owned">Veteran Owned</div>
+        </div>
         <nav>
             <ul>
                 <li><a href="services.html">Services</a></li>
