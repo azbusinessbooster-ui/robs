@@ -1,9 +1,10 @@
+<!-- services.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rob's Painting AZ</title>
+    <title>Services - Rob's Painting AZ</title>
     <style>
         body {
             background-image: url('https://media.istockphoto.com/id/2023616635/vector/rainbow-paint-powder-holi-splash-abstract-vector-illustration.jpg?s=612x612&w=0&k=20&c=eZRnV3Rya0UCs8bSeVdUs-gIGleUglhJ02jejZ6rOGk=');
@@ -47,84 +48,33 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .hero {
-            padding: 100px 20px;
-        }
-        .tagline {
-            font-size: 18px;
-            color: #666;
-        }
-        .headline {
-            font-size: 48px;
-            color: #ff4d4d;
-            margin: 20px 0;
-        }
-        .subtext {
-            font-size: 24px;
-            margin: 20px 0;
-        }
-        .quote-button {
-            background-color: #ff4d4d;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .contact {
+        .services {
             background-color: white;
             padding: 50px 20px;
-        }
-        .contact h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        .contact p.intro {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 40px;
-        }
-        .boxes {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .box {
-            background-color: #f9f9f9;
-            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
             border-radius: 10px;
-            width: 200px;
-            text-align: center;
         }
-        .box img.icon {
-            width: 40px;
-            height: auto;
+        .services h1 {
+            font-size: 36px;
+            color: #ff4d4d;
+            margin-bottom: 30px;
+        }
+        .services h2 {
+            font-size: 24px;
+            margin-top: 20px;
             margin-bottom: 10px;
         }
-        .box h3 {
-            font-size: 20px;
-            margin: 10px 0;
+        .services ul {
+            list-style-type: disc;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+            padding-left: 40px;
         }
-        .box p {
-            font-size: 16px;
-            margin: 5px 0;
-        }
-        .bottom-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .quote-button-outline {
-            background-color: white;
-            color: #ff4d4d;
-            border: 1px solid #ff4d4d;
-            padding: 15px 30px;
-            border-radius: 5px;
+        .services li {
             font-size: 18px;
-            cursor: pointer;
+            margin-bottom: 10px;
         }
         .floating-phone {
             position: fixed;
@@ -144,7 +94,7 @@
         <div class="logo">Rob's Painting AZ</div>
         <nav>
             <ul>
-                <li><a href="#">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="#">Areas Served</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">About Us</a></li>
@@ -153,45 +103,26 @@
         </nav>
         <a href="tel:6028872062" class="phone-button">Call (602) 887-2062</a>
     </header>
-    <section class="hero">
-        <p class="tagline">Trusted & Local - Brushing beauty into every space</p>
-        <h1 class="headline">Professional Painting Services For Your Home</h1>
-        <p class="subtext">Transform your house into a home with perfect painting services. Professional interior and exterior painting throughout Arizona.</p>
-        <button class="quote-button">Get Your Free Quote</button>
-    </section>
-    <section class="contact">
-        <h2>Get In Touch Today</h2>
-        <p class="intro">We're here to help bring your vision to life. Choose the contact method that works best for you.</p>
-        <div class="boxes">
-            <div class="box">
-                <img src="https://media.istockphoto.com/id/1239259997/vector/ringing-phone-icon-in-red-circle-mobile-phone-symbol-connection-mobile-icon-contact-button.jpg?s=612x612&w=0&k=20&c=2xFb28gkOQHXWdLaykL5vvWndgFjkvnE6kscNXQ_J4U=" alt="Phone Icon" class="icon">
-                <h3>Call Us Today</h3>
-                <p>(602) 887-2062</p>
-                <p>Speak directly with our team</p>
-            </div>
-            <div class="box">
-                <img src="https://e7.pngegg.com/pngimages/883/341/png-clipart-logo-computer-icons-encapsulated-postscript-instagram-logo-miscellaneous-trademark.png" alt="Instagram Icon" class="icon">
-                <h3>Instagram</h3>
-                <p><a href="https://www.instagram.com/robs_paintingaz">@robs_paintingaz</a></p>
-                <p>Follow us for project updates</p>
-            </div>
-            <div class="box">
-                <img src="https://i.fbcd.co/products/resized/resized-750-500/gtp010e-15-e10-mainpreview-d5f616ebab6b58f2efd871523667214d1bb53e360c3091307d5b9c7cd3f30145.jpg" alt="Location Icon" class="icon">
-                <h3>Service Area</h3>
-                <p>Mesa Area</p>
-                <p>Serving 12+ cities in AZ</p>
-            </div>
-            <div class="box">
-                <img src="https://thumb.ac-illust.com/08/087886d541f100a8b0cb877e32e485b0_t.jpeg" alt="Clock Icon" class="icon">
-                <h3>Business Hours</h3>
-                <p>Mon - Fri: 7AM - 6PM</p>
-                <p>Saturday: By appointment</p>
-            </div>
-        </div>
-        <div class="bottom-buttons">
-            <a href="tel:6028872062" class="phone-button">Call (602) 887-2062</a>
-            <button class="quote-button-outline">Request Free Quote</button>
-        </div>
+    <section class="services">
+        <h1>Services We Offer</h1>
+        <h2>Painting Services</h2>
+        <ul>
+            <li>Residential Painting (Interior & Exterior)</li>
+            <li>Commercial Painting (Interior & Exterior)</li>
+            <li>Decorative Painting</li>
+            <li>Cabinet Refinishing</li>
+            <li>Eco-Friendly Painting</li>
+        </ul>
+        <h2>Preparation & Repair Services</h2>
+        <ul>
+            <li>Drywall Repair</li>
+            <li>Interior Demolition</li>
+            <li>Pressure Washing</li>
+        </ul>
+        <h2>Additional Services</h2>
+        <ul>
+            <li>Labor-Only Services</li>
+        </ul>
     </section>
     <a href="tel:6028872062" class="floating-phone">📞</a>
 </body>
