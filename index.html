@@ -72,6 +72,71 @@
             font-size: 18px;
             cursor: pointer;
         }
+        .contact {
+            background-color: white;
+            padding: 50px 20px;
+        }
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .contact p.intro {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .boxes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .box img.icon {
+            width: 40px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .box h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .box p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .bottom-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .quote-button-outline {
+            background-color: white;
+            color: #ff4d4d;
+            border: 1px solid #ff4d4d;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .floating-phone {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -94,5 +159,40 @@
         <p class="subtext">Transform your house into a home with perfect painting services. Professional interior and exterior painting throughout Arizona.</p>
         <button class="quote-button">Get Your Free Quote</button>
     </section>
+    <section class="contact">
+        <h2>Get In Touch Today</h2>
+        <p class="intro">We're here to help bring your vision to life. Choose the contact method that works best for you.</p>
+        <div class="boxes">
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/1239259997/vector/ringing-phone-icon-in-red-circle-mobile-phone-symbol-connection-mobile-icon-contact-button.jpg?s=612x612&w=0&k=20&c=2xFb28gkOQHXWdLaykL5vvWndgFjkvnE6kscNXQ_J4U=" alt="Phone Icon" class="icon">
+                <h3>Call Us Today</h3>
+                <p>(602) 887-2062</p>
+                <p>Speak directly with our team</p>
+            </div>
+            <div class="box">
+                <img src="https://e7.pngegg.com/pngimages/883/341/png-clipart-logo-computer-icons-encapsulated-postscript-instagram-logo-miscellaneous-trademark.png" alt="Instagram Icon" class="icon">
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/robs_paintingaz">@robs_paintingaz</a></p>
+                <p>Follow us for project updates</p>
+            </div>
+            <div class="box">
+                <img src="https://i.fbcd.co/products/resized/resized-750-500/gtp010e-15-e10-mainpreview-d5f616ebab6b58f2efd871523667214d1bb53e360c3091307d5b9c7cd3f30145.jpg" alt="Location Icon" class="icon">
+                <h3>Service Area</h3>
+                <p>Mesa Area</p>
+                <p>Serving 12+ cities in AZ</p>
+            </div>
+            <div class="box">
+                <img src="https://thumb.ac-illust.com/08/087886d541f100a8b0cb877e32e485b0_t.jpeg" alt="Clock Icon" class="icon">
+                <h3>Business Hours</h3>
+                <p>Mon - Fri: 7AM - 6PM</p>
+                <p>Saturday: By appointment</p>
+            </div>
+        </div>
+        <div class="bottom-buttons">
+            <a href="tel:6028872062" class="phone-button">Call (602) 887-2062</a>
+            <button class="quote-button-outline">Request Free Quote</button>
+        </div>
+    </section>
+    <a href="tel:6028872062" class="floating-phone">📞</a>
 </body>
 </html>
