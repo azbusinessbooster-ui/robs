@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Rob's Painting AZ</title>
     <style>
+        html {
+            height: 100%;
+        }
         body {
+            min-height: 100%;
             background-image: url('https://media.istockphoto.com/id/2023616635/vector/rainbow-paint-powder-holi-splash-abstract-vector-illustration.jpg?s=612x612&w=0&k=20&c=eZRnV3Rya0UCs8bSeVdUs-gIGleUglhJ02jejZ6rOGk=');
-            background-size: contain;
-            background-repeat: repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Makes the paint theme "follow" by staying fixed in the viewport on scroll */
             font-family: Arial, sans-serif;
             color: #333;
             margin: 0;
@@ -59,6 +64,7 @@
             font-weight: bold;
         }
         .services {
+            background-color: transparent; /* No white sheet, fully connected to the paint background */
             padding: 50px 20px;
             margin: 20px auto;
             max-width: 800px;
@@ -125,21 +131,21 @@
         <h1>Services We Offer</h1>
         <h2>Painting Services</h2>
         <ul>
-            <li>Residential Painting (Interior & Exterior)</li>
-            <li>Commercial Painting (Interior & Exterior)</li>
-            <li>Decorative Painting</li>
-            <li>Cabinet Refinishing</li>
-            <li>Eco-Friendly Painting</li>
+            <li><strong>Residential Painting (Interior & Exterior):</strong> High-quality painting for homes, boosting curb appeal and creating inviting spaces.</li>
+            <li><strong>Commercial Painting (Interior & Exterior):</strong> Professional painting for businesses with minimal disruption and polished results.</li>
+            <li><strong>Decorative Painting:</strong> Custom designs like faux finishes and murals to personalize your space.</li>
+            <li><strong>Cabinet Refinishing:</strong> Restore cabinets affordably, enhancing beauty and functionality.</li>
+            <li><strong>Eco-Friendly Painting:</strong> Use low-VOC paints for sustainable, health-conscious results.</li>
         </ul>
         <h2>Preparation & Repair Services</h2>
         <ul>
-            <li>Drywall Repair</li>
-            <li>Interior Demolition</li>
-            <li>Pressure Washing</li>
+            <li><strong>Drywall Repair:</strong> Fix holes and cracks for seamless surfaces ready for painting.</li>
+            <li><strong>Interior Demolition:</strong> Safe removal of structures to prepare for renovations.</li>
+            <li><strong>Pressure Washing:</strong> Clean surfaces of dirt and old paint for better adhesion.</li>
         </ul>
         <h2>Additional Services</h2>
         <ul>
-            <li>Labor-Only Services</li>
+            <li><strong>Labor-Only Services:</strong> Skilled labor for your materials and projects.</li>
         </ul>
     </section>
     <a href="tel:6028872062" class="floating-phone">📞</a>
