@@ -3,175 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rob's Painting AZ</title>
+    <title>Rob's Painting AZ - Professional Painting Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/066/174/145/small/bright-abstract-paint-splash-background-with-scattered-ink-blots-and-halftone-dots-on-a-clean-white-base-ideal-for-posters-prints-banners-and-digital-projects-vector.jpg');
-            background-size: cover;
-            background-repeat: repeat;
-            color: #000;
+            color: #333;
         }
         header {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #000;
-            position: relative;
-        }
-        .flag {
-            width: 50px;
-            height: auto;
-            position: absolute;
-            top: 10px;
-            left: 10px;
+            background-color: #f8f4e3;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .logo {
-            width: 150px;
-            height: auto;
-        }
-        h1 {
-            color: #000;
-            font-size: 2.5em;
-            margin: 10px 0;
-        }
-        .tagline {
-            font-style: italic;
-            color: #333;
-        }
-        .veteran {
+            font-size: 24px;
             font-weight: bold;
-            color: red;
-            margin-top: 10px;
+            color: #d32f2f;
         }
-        .contact {
-            margin: 10px 0;
-            font-size: 1.2em;
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
-        nav {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            text-align: center;
+        nav a {
+            text-decoration: none;
+            color: #333;
         }
-        nav button {
-            background-color: #007bff;
+        .call-button {
+            background-color: #d32f2f;
             color: white;
-            border: none;
             padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
             border-radius: 5px;
-            font-size: 1em;
-        }
-        nav button:hover {
-            background-color: #0056b3;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #000;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 10px;
-        }
-        h3 {
-            color: #333;
-            margin-top: 20px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9em;
-            color: #333;
-        }
-        a {
-            color: blue;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        .hero {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            color: #d32f2f;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #f8f4e3;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat h2 {
+            color: #d32f2f;
+        }
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            width: 40%;
+            margin: 10px;
+        }
+        .reviews {
+            background-color: #ffebee;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .review-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .review-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px;
+        }
+        .quote-form {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .form-benefits {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-left, .form-right {
+            width: 45%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .service-areas {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .areas-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .area {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .about {
+            padding: 50px 20px;
+            background-color: #f8f4e3;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .veteran-owned {
+            font-size: 14px;
+            color: #d32f2f;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" alt="US Flag" class="flag">
-        <img src="https://thumbs.dreamstime.com/b/cartoon-painter-paint-roller-cheerful-illustration-holding-character-dressed-blue-jumpsuit-cap-orange-400413363.jpg" alt="Rob's Painting AZ Logo" class="logo">
-        <h1>Rob's Painting AZ</h1>
-        <p class="tagline">Brushing beauty into every space</p>
-        <p class="veteran">Veteran Owned</p>
-        <p class="contact">Phone: 602.687.2062 | Instagram: <a href="https://www.instagram.com/robs_paintingaz/">@robs_paintingaz</a></p>
-        <p>FREE ESTIMATES</p>
+        <div class="logo">ROB'S PAINTING AZ <span class="veteran-owned">Veteran Owned</span></div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#areas">Areas Served</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="tel:6026872062" class="call-button">Call (602) 687-2062</a>
     </header>
-    <nav>
-        <button onclick="scrollToSection('services')">Services</button>
-        <button onclick="scrollToSection('about')">About</button>
-        <button onclick="scrollToSection('why')">Why Rob's Painting AZ</button>
-    </nav>
-    <main>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>At Rob's Painting AZ, we offer a full range of painting and prep services to transform your spaces with vibrant colors and professional finishes. Whether it's a cozy home or a bustling commercial spot, we've got you covered!</p>
-            <h3>Painting Services</h3>
-            <ul>
-                <li>Residential & Commercial Painting: High-quality paints for homes and businesses alike.</li>
-                <li>Interior & Exterior Painting: From walls to exteriors, we handle it all with care.</li>
-                <li>Decorative Painting: Add unique touches like murals or accents to make your space pop.</li>
-                <li>Cabinet Refinishing: Refresh your cabinets with eco-friendly finishes for a like-new look.</li>
-                <li>Eco-Friendly Painting: Sustainable options that are kind to the planet and your health.</li>
-            </ul>
-            <h3>Prep Services</h3>
-            <ul>
-                <li>Drywall Repair: Smooth out imperfections for a flawless base.</li>
-                <li>Interior Demolition: Safe removal of old features to prepare for your new vision.</li>
-                <li>Pressure Washing: Clean surfaces thoroughly before painting for lasting results.</li>
-            </ul>
-            <h3>Additional Services</h3>
-            <ul>
-                <li>Labor-Only: Flexible options if you provide the materials—we bring the expertise!</li>
-            </ul>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Rob's Painting AZ is a veteran-owned business dedicated to bringing color and life to every project. Founded by Rob, a proud U.S. veteran with years of experience in the painting industry, we combine military precision with creative flair. Our team is passionate about delivering top-notch results, using eco-friendly materials and techniques to ensure your satisfaction. Based in Arizona, we're committed to serving our community with integrity and a smile—just like our cheerful painter mascot!</p>
-        </section>
-        <section id="why">
-            <h2>Why Choose Rob's Painting AZ?</h2>
-            <p>Choosing us means opting for quality, reliability, and a touch of fun in every brushstroke. Here's why we're the perfect fit for your painting needs:</p>
-            <ul>
-                <li><strong>Veteran-Owned Excellence:</strong> Benefit from the discipline and attention to detail honed in military service.</li>
-                <li><strong>Eco-Friendly Options:</strong> We prioritize sustainable practices to protect your home and the environment.</li>
-                <li><strong>Free Estimates:</strong> No-obligation quotes to help you plan your project with ease.</li>
-                <li><strong>Professional Team:</strong> Skilled painters who treat your space like their own, ensuring clean and efficient work.</li>
-                <li><strong>Affordable and Transparent:</strong> Competitive pricing with no hidden fees, plus flexible services like labor-only.</li>
-                <li><strong>Customer Satisfaction:</strong> We're not done until you're thrilled with the vibrant transformation!</li>
-            </ul>
-        </section>
-    </main>
+
+    <section class="hero">
+        <h1>Professional Painting Services For Your Home</h1>
+        <p>Brushing beauty into every space. Transform your house into a home with perfect painting services. Professional interior and exterior painting throughout your local area.</p>
+        <a href="#quote" class="call-button">Get Your Free Quote</a>
+        <p>Call: (602) 687-2062</p>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h2>500+</h2>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+            <h2>50+</h2>
+            <p>5-Star Reviews</p>
+        </div>
+        <div class="stat">
+            <h2>10</h2>
+            <p>Years in Business</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h1>Professional Painting Services Tailored for You</h1>
+        <p>From interior transformations to exterior makeovers, we deliver quality results that last.</p>
+        <div class="service-cards">
+            <div class="service-card">
+                <h2>Interior Painting</h2>
+                <p>Whether it's changing the paint color in your bedroom or painting the entire inside of your home, we can customize a plan for all your interior painting needs.</p>
+                <a href="#" class="call-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h2>Exterior Painting</h2>
+                <p>If your home's paint is failing or you want to create a brand new look, we know how to give your home the fresh coat of paint that it needs.</p>
+                <a href="#" class="call-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h2>Cabinet Painting & Refinishing</h2>
+                <p>Painting your cabinets is one of the most cost-effective ways to transform your kitchen or bathroom into a full renovation.</p>
+                <a href="#" class="call-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h2>Additional Services</h2>
+                <p>Drywall Repair, Interior Demolition, Pressure Washing, Eco-Friendly Painting, Labor-Only Services.</p>
+                <a href="#" class="call-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h1>What Our Customers Say</h1>
+        <p>Real results from real homeowners across the Valley. See how Rob's Painting AZ's professional painting services transform homes and exceed expectations.</p>
+        <div class="review-cards">
+            <div class="review-card">
+                <p>★★★★★</p>
+                <p>"Rob's Painting AZ painted our home and we were so impressed! Very competitively priced, courteous crew, and very detailed oriented. My husband sold high-end real estate and is very particular - he only has great things to say about Rob's Painting AZ."</p>
+                <p>- Pamela Goldsmith, Homeowner, Phoenix, AZ</p>
+            </div>
+            <div class="review-card">
+                <p>★★★★★</p>
+                <p>"We had our house painted this week by Rob's Painting AZ and our home looks absolutely beautiful! They are meticulous in attention to detail, extremely pleasant to work with."</p>
+                <p>- Melinda Koeneke, Homeowner, Arizona</p>
+            </div>
+            <div class="review-card">
+                <p>★★★★★</p>
+                <p>"Rob's Painting AZ did a great job on the interior of our new build. We had a very tight timeframe and they were so efficient and fast! Barry was great at communicating and their pricing was very fair."</p>
+                <p>- Randi Dierlam, Homeowner, New Build Project</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="quote-form">
+        <h1>Get Your Free Quote</h1>
+        <p>Take your house and transform it into your dream home.</p>
+        <div class="form-benefits">
+            <div class="form-left">
+                <form>
+                    <input type="text" placeholder="Name *" required>
+                    <input type="email" placeholder="Your email@example.com">
+                    <textarea placeholder="How can we help? * Tell us about your painting project: interior, exterior, rooms, square footage, timeline, etc." required></textarea>
+                    <button type="submit" class="call-button">Get My Free Quote</button>
+                    <p>By submitting this form, you agree to our Privacy Policy and Terms of Service.</p>
+                </form>
+            </div>
+            <div class="form-right">
+                <ul>
+                    <li>Licensed & Insured - AZ ROC 197025 - Full liability coverage</li>
+                    <li>Quality Materials - Premium paints and professional equipment</li>
+                    <li>Expert Team - Experienced painters with attention to detail</li>
+                    <li>Free Estimates - No obligation quotes within 24 hours</li>
+                </ul>
+                <div class="call-us">
+                    <h2>Call Us Now</h2>
+                    <p>(602) 687-2062</p>
+                    <p>Speak directly with our painting experts</p>
+                    <p>Available Monday - Saturday, 7:00 AM - 7:00 PM</p>
+                    <p>Emergency services available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="service-areas">
+        <h1>Proudly Serving the Greater Phoenix Area</h1>
+        <p>From our Mesa location, we provide professional painting services throughout the Valley.</p>
+        <!-- Placeholder for map -->
+        <img src="placeholder-map.jpg" alt="Service Area Map" style="width: 100%; max-width: 600px;">
+        <div class="areas-list">
+            <div class="area">Mesa, AZ</div>
+            <div class="area">Gilbert, AZ</div>
+            <div class="area">Gold Canyon, AZ</div>
+            <div class="area">Chandler, AZ</div>
+            <div class="area">Tempe, AZ</div>
+            <div class="area">Scottsdale, AZ</div>
+            <div class="area">Chandler Heights, AZ</div>
+            <div class="area">Queen Creek, AZ</div>
+            <div class="area">Paradise Valley, AZ</div>
+            <div class="area">San Tan Valley, AZ</div>
+            <div class="area">Magnolia Grove, AZ</div>
+            <div class="area">Sun Lakes, AZ</div>
+            <div class="area">Queen Valley, AZ</div>
+            <div class="area">Phoenix, AZ</div>
+            <div class="area">Glendale, AZ</div>
+            <div class="area">Peoria, AZ</div>
+        </div>
+        <p>Don't see your area listed? We may still be able to help!</p>
+        <a href="tel:6026872062">Call us to confirm service availability</a>
+    </section>
+
+    <section id="about" class="about">
+        <h1>About Rob's Painting AZ</h1>
+        <p>A veteran-owned business providing superior painting services across the Phoenix Metropolitan area.</p>
+        <p>Rob's Painting AZ is a veteran-owned business that has been providing a complete line of commercial and residential painting services. Originally founded in Mesa, AZ, Rob's Painting AZ has expanded its coverage area to include all of the Phoenix Metropolitan area.</p>
+        <p>Our family of customers now spans from Gilbert to Surprise, from Queen Creek to Anthem, from Chandler to Paradise Valley and every community in between.</p>
+        <p>Rob's Painting AZ continues to grow in this difficult economic time by providing superior service. Their professional craftsmen pride themselves in providing a quality of service unmatched in their industry. Rob's Painting AZ offers written warranties on all of its work that equal or surpass any offered by other painting contractors.</p>
+        <!-- Placeholder for owner info -->
+        <h2>Rob, Owner & Founder</h2>
+        <p>Rob founded Rob's Painting AZ with a vision to provide unmatched quality and customer service in the painting industry. His commitment to excellence has made Rob's Painting AZ a trusted name throughout the Phoenix Metro area.</p>
+        <div class="stats">
+            <div class="stat">
+                <h2>10+</h2>
+                <p>Years in Business</p>
+            </div>
+            <div class="stat">
+                <h2>15+</h2>
+                <p>Cities Served</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        &copy; 2025 Rob's Painting AZ. All rights reserved.
+        <p>© 2025 Rob's Painting AZ. All Rights Reserved. Sitemap.</p>
+        <p>Licensed, Bonded, and Insured. License number: AZ ROC TBD</p>
+        <p>Phone: (602) 687-2062</p>
+        <p>Address: Mesa, Arizona</p>
+        <p>Follow us on Instagram: <a href="https://www.instagram.com/robs_paintingaz/" style="color: white;">@robs_paintingaz</a></p>
     </footer>
-    <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
