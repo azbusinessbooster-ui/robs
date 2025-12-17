@@ -1,4 +1,4 @@
-<!-- finished-jobs.html (updated with direct post embed via iframe for the video) -->
+<!-- finished-jobs.html (updated with added photos below the video embed) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,8 +78,20 @@
             text-shadow: 1px 1px 2px rgba(255,255,255,0.8); /* For readability */
         }
         .instagram-embed {
-            margin: 0 auto;
+            margin: 0 auto 30px;
             overflow: hidden; /* To hide parts if needed */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .floating-phone {
             position: fixed;
@@ -116,6 +128,13 @@
         <h1>Finished Jobs</h1>
         <div class="instagram-embed">
             <iframe src="https://www.instagram.com/p/DGd6dPHyK77/embed" width="640" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Backyard with artificial grass and dog">
+            <img src="image2.jpg" alt="Indoor green wall with Christmas tree">
+            <img src="image3.jpg" alt="House exterior with garage">
+            <img src="image4.jpg" alt="House front with Rob's Painting AZ sign">
+            <img src="image5.jpg" alt="Another house front entrance">
         </div>
     </section>
     <a href="tel:6028872062" class="floating-phone">📞</a>
